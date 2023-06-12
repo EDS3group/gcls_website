@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap');
+@import "./all.min.css";
+
+@font-face {
+    font-family: "din";
+    src: url('@/assets/fonts/din.ttf');
+}
+
+body {
+    * {
+
+        font-family: "din";
+    }
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $main_color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $main_color;
+}
+
+//   206F00
+// 7EA700
+
+.dash {
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+
+        height: 4px;
+        width: 85px;
+
+        background: #0B60A9;
+        margin-block: 10px;
+        margin-inline: auto;
+
+    }
+
+}
+
+.icon {
+    color: #fff;
+    font-size: 32px;
+    width: 64px;
+    height: 64px;
+
+}
+
+.container {
+    max-width: 1180px !important;
+}
+
+.base-btn {
+    @include baseButton()
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+}
+
+.readMore {
+    color: $textColor;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    position: relative;
+
+    i {
+        margin-inline-start: 5px;
+    }
+}
+
+pre {
+    font-family: inherit !important;
+    overflow: unset !important;
+    white-space: break-spaces;
+}
+
+label {
+    font-size: 14px;
+}
